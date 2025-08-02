@@ -1,0 +1,948 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #E1E1E3;
+  font-family: Gilroy;
+  margin-top: 1rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 19rem;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+}
+header nav .logo img {
+  width: 2rem;
+}
+header nav .logo p {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  font-weight: 800;
+  font-family: "Countryside";
+}
+header nav .option {
+  display: flex;
+  gap: 2.5rem;
+}
+header nav .option a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  text-shadow: 0.8px 0.8px 0px #000000;
+}
+header nav .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header nav .search-bar a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+}
+header nav .search-bar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+}
+header nav .search-bar .ri-menu-line {
+  display: none;
+}
+
+main .page-1 {
+  display: flex;
+  height: 100vh;
+  background-image: url(pngkey.com-mapamundi-png-2740178.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 75rem;
+}
+main .page-1 .left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 10rem 0 0 5rem;
+  width: 40%;
+}
+main .page-1 .left-side h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main .page-1 .left-side h2 span {
+  color: #666666;
+}
+main .page-1 .left-side p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+main .page-1 .left-side button {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  width: 10rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  background-color: #666666;
+  border: none;
+  color: #fff;
+}
+main .page-1 .right-side {
+  display: grid;
+  max-width: 40%;
+  margin: 5rem 0 5rem 10rem;
+  gap: 4rem;
+  grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" ". . c c";
+}
+main .page-1 .right-side img {
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+main .page-1 .right-side .image-1 {
+  grid-area: a;
+  aspect-ratio: 4/5;
+}
+main .page-1 .right-side .image-2 {
+  grid-area: b;
+  aspect-ratio: 1/1;
+}
+main .page-1 .right-side .image-c {
+  grid-area: c;
+  aspect-ratio: 4/3;
+}
+main .page-2 {
+  height: 100vh;
+  margin: 2rem 8rem 0 8rem;
+  padding-top: 3rem;
+}
+main .page-2 h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: -0.1rem;
+}
+main .page-2 .destination {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 1.5rem;
+}
+main .page-2 .destination a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .page-2 .destination a:nth-child(1) {
+  font-weight: 600;
+}
+main .page-2 .destination .dropbtn {
+  color: #666666;
+  border: none;
+  background-color: #E1E1E3;
+  box-shadow: none;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 1rem;
+}
+main .page-2 .destination .dropdown {
+  position: relative;
+  display: inline-block;
+}
+main .page-2 .destination .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+main .page-2 .destination .dropdown-content a {
+  color: rgb(89, 89, 89);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+main .page-2 .destination .dropdown-content a:hover {
+  background-color: #ddd;
+}
+main .page-2 .destination .dropdown:hover .dropdown-content {
+  display: block;
+}
+main .page-2 .destination .dropdown:hover .dropbtn {
+  color: black;
+}
+main .page-2 .destination button {
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 2px black;
+  font-weight: 700;
+}
+main .page-2 .destination-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+main .page-2 .destination-2 img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 0.8rem;
+}
+main .page-2 .destination-2 img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main .page-2 .destination-2 h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: -0.1rem;
+}
+main .page-3 {
+  height: 100vh;
+  margin: 2rem 8rem 0rem 8rem;
+  padding-top: 3rem;
+}
+main .page-3 .heading {
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: space-between;
+}
+main .page-3 .heading h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+}
+main .page-3 .heading button {
+  height: 3rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 2px black;
+  font-weight: 700;
+}
+main .page-3 .stories {
+  display: flex;
+}
+main .page-3 .stories .left-side {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+main .page-3 .stories .left-side img {
+  width: 42rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  background-color: #000;
+}
+main .page-3 .stories .left-side p {
+  width: 89%;
+  overflow-y: hidden;
+}
+main .page-3 .stories .left-side h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+main .page-3 .stories .right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .page-3 .stories .right-side .block-1 {
+  display: flex;
+  gap: 1.7rem;
+}
+main .page-3 .stories .right-side .block-1 img {
+  min-width: 15rem;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  background-color: #000;
+}
+main .page-3 .stories .right-side .block-1 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .page-3 .stories .right-side .block-1 .content p {
+  padding-top: 0.4rem;
+}
+main .page-3 .stories .right-side .block-1 .content p:nth-child(3) {
+  color: red;
+}
+main .page-3 .stories .right-side .block-1 .content h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+main .page-4 {
+  height: 100vh;
+  margin: 2rem 8rem 0 8rem;
+  padding-top: 3rem;
+}
+main .page-4 h2 {
+  font-size: 3rem;
+  margin-bottom: 3.3rem;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main .page-4 .content-main {
+  display: flex;
+  gap: 4rem;
+}
+main .page-4 .content-main .left-side {
+  width: 40%;
+}
+main .page-4 .content-main .left-side .name {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+main .page-4 .content-main .left-side .name img {
+  width: 6rem;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+main .page-4 .content-main .left-side .name .details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .page-4 .content-main .left-side .name .details h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main .page-4 .content-main .left-side .name .details p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .page-4 .content-main .left-side .star {
+  padding-bottom: 0.3rem;
+}
+main .page-4 .content-main .left-side .star .ri-star-smile-fill {
+  color: #ecc902;
+  font-size: 1.5rem;
+}
+main .page-4 .content-main .left-side .content h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+main .page-4 .content-main .right-side {
+  width: 60%;
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: "a a b b" "a a b b" "a a c c" "a a c c";
+}
+main .page-4 .content-main .right-side .carousel {
+  position: relative;
+  width: 25rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  grid-area: a;
+}
+main .page-4 .content-main .right-side .carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+main .page-4 .content-main .right-side .carousel-item {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+main .page-4 .content-main .right-side .carousel-item img {
+  width: 25rem;
+  height: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+main .page-4 .content-main .right-side .carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+main .page-4 .content-main .right-side .carousel-control.prev {
+  left: 10px;
+}
+main .page-4 .content-main .right-side .carousel-control.next {
+  right: 10px;
+}
+main .page-4 .content-main .right-side .video {
+  position: relative;
+  width: 22rem;
+  height: 20rem;
+}
+main .page-4 .content-main .right-side .video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  grid-area: b;
+}
+main .page-4 .content-main .right-side .video #playPauseBtn {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5411764706);
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: opacity 0.3s ease-in-out;
+}
+main .page-4 .content-main .right-side .video #playPauseBtn:hover {
+  opacity: 1;
+}
+main .page-4 .content-main .right-side .content {
+  display: flex;
+  flex-direction: column;
+  grid-area: c;
+  gap: 1rem;
+}
+main .page-4 .content-main .right-side .content h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: -1rem;
+  margin-bottom: 3.4rem;
+}
+main .page-4 .content-main .right-side .content button {
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 2px black;
+  font-weight: 700;
+  width: 13rem;
+  align-self: flex-end;
+}
+main .page-4 .content-main .right-side .content button:hover {
+  background-color: #000;
+  color: #fff;
+}
+main .banner {
+  height: 65vh;
+  position: relative;
+}
+main .banner img {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: blur(2.5px);
+}
+main .banner .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+main .banner .content h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
+  line-height: 4rem;
+}
+main .banner .content input {
+  padding: 1.4rem 8rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+main .banner .content button {
+  padding: 1.4rem 2rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 2px black;
+  background-color: greenyellow;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+main .banner .content p {
+  color: #fefefe;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 2rem;
+}
+main .banner .content span {
+  text-decoration: underline;
+  color: #40ff00;
+  cursor: pointer;
+}
+
+footer {
+  color: #1f1f1f;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+}
+footer .content .left {
+  width: 45%;
+}
+footer .content .left .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+footer .content .left .logo img {
+  width: 3rem;
+}
+footer .content .left .logo p {
+  font-size: 3rem;
+  margin-left: 1rem;
+  font-weight: 800;
+  font-family: "Countryside";
+}
+footer .content .left p {
+  margin-top: 1rem;
+  margin-left: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+footer .content .left .social-media {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+footer .content .left .social-media a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+}
+footer .content .right {
+  margin-top: 2rem;
+  display: flex;
+  gap: 5rem;
+}
+footer .content .right .option {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .content .right .option a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+footer .content .right .option h3 {
+  padding-bottom: 1.3rem;
+  font-size: 1.5rem;
+}
+footer .content .right .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .content .right .contact a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+}
+footer .content .right .contact p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+footer .content .right .travel-destination {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .content .right .travel-destination a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+footer .content .right .travel-destination p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1.3rem;
+  text-transform: uppercase;
+}
+footer .content .right .option-2 {
+  display: flex;
+  min-width: 7rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .content .right .option-2 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+.copy-right {
+  display: flex;
+  padding: 1rem 0 1rem 2rem;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.copy-right p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.copy-right .madeby {
+  display: flex;
+  gap: 1rem;
+}
+.copy-right .madeby a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 2rem 0 0;
+}
+
+@media (max-width: 728px) {
+  body, html {
+    margin-top: 0;
+    padding: 0.1rem;
+    overflow-x: hidden;
+  }
+  header nav {
+    justify-content: space-between;
+    gap: 1.2rem;
+  }
+  header nav .logo img {
+    width: 2rem;
+  }
+  header nav .logo p {
+    font-size: 0.6rem;
+  }
+  header nav .option {
+    display: none;
+  }
+  header nav .search-bar {
+    margin-left: -6rem;
+    gap: 1rem;
+  }
+  header nav .search-bar a {
+    font-size: 0.7rem;
+  }
+  header nav .search-bar button {
+    padding: 0.5rem 1rem;
+    font-size: 0.6rem;
+  }
+  header nav .search-bar .ri-menu-line {
+    display: block;
+  }
+  main .page-1 {
+    height: auto;
+    display: block;
+    margin-bottom: 7rem;
+    position: relative;
+  }
+  main .page-1 .left-side {
+    width: 80%;
+    margin: 5rem 0 0 2rem;
+  }
+  main .page-1 .left-side h2 {
+    font-size: 2rem;
+    margin-bottom: -0.9rem;
+  }
+  main .page-1 .left-side h2 br {
+    display: none;
+  }
+  main .page-1 .left-side p {
+    font-size: 0.8rem;
+  }
+  main .page-1 .left-side button {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    width: 8rem;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main .page-1 .right-side {
+    gap: 0.3rem;
+    margin: 0 0 0 2.5rem;
+    grid-template-areas: "a a b b" "a a b b" "a a b b" "a a c c" "a a c c";
+  }
+  main .page-1 .right-side img {
+    border-radius: 1rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 40vw;
+    height: 100%;
+  }
+  main .page-1 .right-side .image-1 {
+    aspect-ratio: 4/5;
+  }
+  main .page-1 .right-side .image-2 {
+    aspect-ratio: 1/1;
+  }
+  main .page-1 .right-side .image-c {
+    aspect-ratio: 4/3;
+  }
+  main .page-2 {
+    height: auto;
+    margin: 0 1rem 0 1rem;
+  }
+  main .page-2 h1 {
+    font-size: 2rem;
+    margin-bottom: -0.9rem;
+  }
+  main .page-2 .destination {
+    overflow-x: auto;
+  }
+  main .page-2 .destination-2 img {
+    width: 100%;
+    height: 150px;
+  }
+  main .page-3 {
+    height: auto;
+    position: relative;
+    margin: 0 0 0 1rem;
+  }
+  main .page-3 .heading h2 {
+    font-size: 2rem;
+    margin-bottom: 0.9rem;
+  }
+  main .page-3 .heading button {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 143%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main .page-3 .stories {
+    display: block;
+    position: relative;
+  }
+  main .page-3 .stories .left-side {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  main .page-3 .stories .left-side img {
+    width: 100%;
+    height: 250px;
+  }
+  main .page-3 .stories .left-side p {
+    width: 100%;
+    overflow-y: hidden;
+  }
+  main .page-3 .stories .left-side h4 {
+    font-size: 1rem;
+  }
+  main .page-3 .stories .right-side .block-1 img {
+    min-width: 10rem;
+    height: 10rem;
+  }
+  main .page-3 .stories .right-side .block-1 .content p {
+    padding-top: 0.4rem;
+  }
+  main .page-3 .stories .right-side .block-1 .content p:nth-child(3) {
+    color: red;
+  }
+  main .page-3 .stories .right-side .block-1 .content h4 {
+    font-size: 1rem;
+  }
+  main .page-4 {
+    height: auto;
+    margin: 0rem 1rem 0 1rem;
+  }
+  main .page-4 h2 {
+    font-size: 2.3rem;
+  }
+  main .page-4 p {
+    margin-top: 1rem;
+    margin-left: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  main .page-4 .content-main {
+    display: block;
+    margin: 0 0 4rem 0;
+  }
+  main .page-4 .content-main .left-side {
+    width: 100%;
+  }
+  main .page-4 .content-main .left-side .name {
+    display: block;
+    padding-left: 7.5rem;
+  }
+  main .page-4 .content-main .left-side .name img {
+    width: 10rem;
+    height: 10rem;
+  }
+  main .page-4 .content-main .left-side .name .details {
+    gap: 0;
+  }
+  main .page-4 .content-main .left-side .name .details h3 {
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+  }
+  main .page-4 .content-main .left-side .name .details p {
+    font-size: 1rem;
+    text-align: start;
+  }
+  main .page-4 .content-main .left-side .star {
+    padding-left: 8rem;
+    padding-bottom: 2rem;
+  }
+  main .page-4 .content-main .left-side .content h5 {
+    font-size: 1.3rem;
+  }
+  main .page-4 .content-main .left-side .content p {
+    font-size: 1rem;
+    margin-left: 0.1rem;
+  }
+  main .page-4 .content-main .right-side {
+    gap: 0.8rem;
+    width: 100%;
+  }
+  main .page-4 .content-main .right-side .carousel {
+    width: 15rem;
+    height: 20rem;
+  }
+  main .page-4 .content-main .right-side .carousel-item img {
+    width: 15rem;
+    height: 20rem;
+  }
+  main .page-4 .content-main .right-side .video {
+    width: 9rem;
+    height: 9rem;
+  }
+  main .page-4 .content-main .right-side .video video {
+    width: 100%;
+    height: 100%;
+  }
+  main .page-4 .content-main .right-side .video #playPauseBtn {
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+  }
+  main .page-4 .content-main .right-side .content h5 {
+    font-size: 0.8rem;
+    margin-top: -4rem;
+  }
+  main .page-4 .content-main .right-side .content button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    width: 9rem;
+    align-self: flex-start;
+  }
+  main .banner {
+    height: 50vh;
+  }
+  main .banner img {
+    height: 50vh;
+  }
+  main .banner .content h1 {
+    font-size: 1.5rem;
+    margin-bottom: -0.9rem;
+    line-height: -5rem;
+  }
+  main .banner .content input {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  main .banner .content button {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+  }
+  main .banner .content p {
+    font-size: 0.8rem;
+  }
+  footer {
+    display: none;
+  }
+  .copy-right p {
+    font-size: 0.5rem;
+  }
+  .copy-right .madeby a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  main .page-3 .heading button {
+    display: none;
+  }
+  main .page-4 h2 {
+    font-size: 1.8rem;
+    margin-top: 7rem;
+  }
+  main .page-4 .right-side .carousel {
+    margin-left: 4rem;
+  }
+  main .page-4 .right-side .video video {
+    display: none;
+  }
+  main .page-4 .right-side .content h5 {
+    display: none;
+  }
+  main .page-4 .right-side .content button {
+    display: none;
+  }
+  main .banner .content input {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
